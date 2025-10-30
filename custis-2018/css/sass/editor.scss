@@ -1,0 +1,34 @@
+/**
+ * TinyMCE editor styles
+ *
+ * @package custis-2018
+ * @author Postali
+ */
+/*!* WARNING: This is a generated stylesheet. To make changes edit editor.scss
+*/
+
+@import 'compass';
+@import 'global';
+
+body#tinymce.wp-editor {
+
+  h1, h2, h3, h4, h5, h6 {
+    clear: both;
+    font-family: 'Nato Sans', sans-serif;
+    line-height: $body-line-height;
+  }
+
+  a {
+    text-decoration: none;
+    color:$blue;
+  }
+
+  .alignleft {
+    margin-right: 1em;
+  }
+
+  .alignright {
+    margin-left: 1em;
+  }
+
+}

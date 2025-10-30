@@ -1,0 +1,892 @@
+/**
+ * Mobile styles applied regardless of the different size
+ *
+ * @package custis-2018
+ * @author Postali
+ */
+
+.mobile {
+	display: none;
+}
+
+/* Media Queries from Postali parent theme */
+@media (max-width: 3250px) {
+
+	.page-template-page-category .banner-container .banner, .page-template-page-category-child .banner-container .banner {
+    	background-size: 40%,cover !important;
+    	background-position: 3% center,center center !important;
+	}
+	.contact-container .two_columns_50_50 .column1 {
+		background-position: center top;
+	}
+	.banner-container {
+		min-height: 50vh;
+	}
+	.page-id-10 .banner-container .banner,
+	.page-id-1042 .banner-container .banner {
+		background-position: center top!important;
+	}
+	#fp-cta .two_columns_50_50 .column1 {
+		background-position: center top;
+	}
+}
+
+@media (max-width: 2750px) {
+	.page-template-page-category .banner-container .banner, .page-template-page-category-child .banner-container .banner {
+    	background-size: 40%,cover !important;
+    	background-position: -1% center,center center !important;
+	}
+}
+
+@media (max-width: 2000px) {
+	.page-template-page-category .banner-container .banner, .page-template-page-category-child .banner-container .banner {
+    	background-position: -3% center,center center !important;
+	}
+	.banner-container {
+		min-height: 45vh;
+	}
+}
+
+@media (max-width: 1750px) {
+	.page-template-page-category .banner-container .banner, .page-template-page-category-child .banner-container .banner {
+    	background-position: -6% center,center center !important;
+	}
+	.banner-container {
+		min-height: 500px;
+	}
+}
+
+/*@media (max-width: 1650px) {
+	.page-template-page-category .banner-container .banner, .page-template-page-category-child .banner-container .banner {
+    	background-size: 38%,cover !important;
+    	background-position: -1% center,center center !important;
+	}
+}*/
+
+@media (max-width: 1300px) {
+	h1 {
+		font-size: 45px;
+	}
+	#fp-about img {
+		left: -9%;
+	}
+	.page-template-page-category .banner-container .banner, .page-template-page-category-child .banner-container .banner {
+		background-position: -5% center, center center!important;
+		background-size: 39%, cover!important;
+	}
+
+}
+
+@media (max-width:1200px) {
+	header .head-menu ul li a {
+		padding: 20px 8px;
+	}
+	#fp-banner .container_inner #banner-selector {
+		width: 60%;
+	}
+	#fp-areas {
+		background-size: 90%;
+		background-position: 180% bottom;
+	}
+	.page-template-page-category .banner-container .banner, .page-template-page-category-child .banner-container .banner {
+		background-size: 44%,cover !important;
+		background-position: -14% center,center center !important;
+	}
+	#category-contact {
+		padding: 100px 0;
+	}
+	#child-2-can-do .what-item {
+		width: 32%;
+	}
+	.accordion_holder.accordion div.accordion_content {
+		font-size: 14px; 
+	}
+}
+@media (max-width: 1100px) {
+	.btn {
+		padding: 15px 30px;
+	}
+	.big-text { 
+		font-size: 24px;
+		line-height: 140%;
+	 }
+	p {
+		font-size: 16px;
+	}
+	.banner-container {
+		min-height: 450px;
+	}
+	h1 {
+		font-size: 40px;
+	}
+	.page-template-page-category #category-bottom .container_inner, .page-template-page-category #category-child-1-bottom .container_inner, .page-template-page-category-child #category-bottom .container_inner, .page-template-page-category-child #category-child-1-bottom .container_inner {
+		width: 75%;
+	}
+	#fp-practice-areas .PA-content p, #fp-practice-areas .PA-content a {
+		font-size: 13px;
+	}
+	#fp-do-for-you {
+		height: 320px;
+	}
+	#fp-do-for-you-items .fp-do-for-you-item {
+		width: 90%;
+	}
+	#fp-areas .container_inner .areas-top {
+		width: 75%;
+	}
+	.page-id-12 .banner .container_inner .banner-content {
+		width: 75%;
+	}
+	.page-id-12 #contact-content {
+		padding: 80px 0 100px;
+	}
+}
+
+@media (max-width: 1042px) {
+	.header-tab {
+
+	}
+	body.logged-in header {
+		margin-top: 0;
+	}
+	.desktop {
+		display: none !important;
+	}
+	.mobile {
+		display: block;
+	}
+	.left, .right {
+		width:100%;
+		float: none;
+	}
+	header .head-menu {
+			display: none;
+	}
+	#mobile-nav {
+		.sub-menu {
+			display: none;
+			li {
+				a {
+					border-bottom: 0;
+					font-size: 12px;
+					padding: 10px;
+				}
+			}
+			ul.sub-menu {
+				background-color: $lt-gray;
+			}
+		}
+	}
+	.menu-item-has-children>a {
+			&:after {
+				font-family: $icomoon;
+				content: '\e903';
+				font-size: 10px;
+				vertical-align: bottom;
+				position: absolute;
+				right: 8%;
+			}
+	}
+	.menu-item-has-children>a.open {
+		&:after {
+			font-family: $icomoon;
+			content: '\e91c';
+			font-size: 10px;
+			vertical-align: bottom;
+			position: absolute;
+			right: 8%;
+		}
+	}
+	#mobile-nav ul {
+		li.facebook, li.linkedin, li.twitter {
+			display: inline-block!important;
+			margin: 0 auto!important;
+			position: relative;
+			a {
+				border-bottom: 0;
+				color: $white;
+				position: relative;
+				padding: 15px;
+				&:before {
+	            	font-size: 28px;
+	            	color: $black;
+	            	vertical-align: -webkit-baseline-middle;
+	            	font-family: $icomoon!important;
+	            	position: absolute;
+	            	left: 0;
+	            	right: 0;
+	          	}
+			}
+		}
+		li.facebook a:before {
+			content: "\e90a";
+		}
+		li.linkedin a:before {
+			content: "\e90b";
+		}
+		li.twitter a:before {
+			content: "\e90c";
+		}
+	}
+	#fp-banner, .ukie_video_bg_content, .ukie_video_bg {
+		height: auto!important;
+	}
+	#fp-cta .two_columns_50_50 .column2 .column_inner {
+		padding: 10%;
+	}
+	#fp-cta .two_columns_50_50 .column2 ul li:before {
+		font-size: 40px;
+		height: 40px;
+		width: 40px;
+		left: -12%;
+	}
+	#fp-about img {
+		display: none;
+	}
+	.banner-container .category-banner-left .category-banner-left-container {
+		padding: 50px 20px;
+	}
+	.page-template-page-category .category-banner-left .arrow.bounce, .page-template-page-category-child .category-banner-left .arrow.bounce {
+		padding-left: 0;
+	}
+	.page-template-page-category-child-2 .banner-content {
+		width: 100%;
+	}
+/*	// .page-id-12 #contact-content {
+	// 	background-size: 100%;
+	// 	padding: 80px 0 375px;
+	// }*/
+	footer {
+		.foot-container {
+			display: block;
+		}
+		.foot-left {
+			text-align: center;
+			padding-right: 0;
+			[itemprop="image"] {
+				margin: -125px auto 0;
+			}
+		}
+		.foot-right {
+			text-align: center;
+			padding-left: 0;
+			margin-top: 25px;
+			.office-locations {
+				width: 45%;
+				margin: 25px auto 0;
+				li {
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 990px) {
+	body.large .container_inner, body.normal .container_inner, body.large .drop_down2 .second, body.large .drop_down2 .second .inner2, body.normal .drop_down2 .second, body.normal .drop_down2 .second .inner2, body.small .drop_down2 .second, body.small .drop_down2 .second .inner2, body.normal .full_width .parallax_content, .full_width .parallax_content, .page-template-page-category-child-2 #category-bottom .container_inner {
+		width: 90%;
+	}
+	.page-template-page-category #category-bottom .container_inner, .page-template-page-category #category-child-1-bottom .container_inner, .page-template-page-category-child #category-bottom .container_inner, .page-template-page-category-child #category-child-1-bottom .container_inner {
+		width: 85%;
+	}
+	.fp-block, .page-bg, .category-block, .page-id-453 .fp-block { 
+		padding: 50px 0 0;
+	}
+	.page-template-page-category #category-top, .page-template-page-category-child #category-top, .page-id-347 #category-child-1-bottom, .page-id-23 #category-top, .page-id-25 #category-top, .page-id-27 #category-top, .page-id-29 #category-top, .page-id-31 #category-top, .page-id-35 #category-top, .page-id-39 #category-top, .page-id-347 #category-top, .page-id-33 #category-top {
+		padding-bottom: 50px;
+	}
+	#fp-practice-areas, #fp-do-for-you-items { 
+		padding-bottom: 50px; 
+	}
+	.contact-container {
+		margin-top: 50px;
+	}
+	#fp-banner .container_inner {
+	 	p {
+	 		font-size: 30px;
+	 	}
+	 	.fp-banner-fight {
+	 		font-size: 74px;
+	 	}
+	 	#banner-selector {
+	 		width: 75%;
+	 	}
+	}
+	#fp-block-one .column2 .reasons-box {
+	 	width: 100%;
+	 }
+	 #practice-areas-tiles {
+	 	.container_inner {
+	 		width: 90%;
+			.PA-content p,  .PA-content a {
+				font-size: 16px;
+				line-height: 150%;
+			}
+	 	}
+	}
+	#fp-do-for-you-items .fp-do-for-you-item {
+	 	width: 100%;
+	}
+	#fp-areas .container_inner .areas-top {
+		width: 85%;
+	}
+
+	#category-contact {
+		padding: 80px 0;
+	}
+	.blog .blog_holder article {
+		width: 32%;
+	}
+	.contact-container .two_columns_50_50 .column2 .column_inner .btn {
+		max-width: 100%;
+	}
+	.page-template-page-category .banner-container .banner, .page-template-page-category-child .banner-container .banner {
+    	background-size: 49%,cover !important;
+    	background-position: -25% center,center center !important;
+	}
+}
+
+@media (max-width: 768px) {
+	.header-tab {
+		.reasons-box {
+			padding: 15px 0 15px;
+			p {
+				font-size: 18px;
+				padding: 0 10px 0 0;
+			}
+			img {
+				display: none;
+			}
+		}
+	}
+	header {
+		.logo {
+			display: block;
+			a {
+				img {
+					height: 65px!important;
+				}
+			}
+		}
+	}
+	.content, .home .content {
+		padding-top: 150px;
+	}
+	.two_columns_50_50 .column1, .two_columns_50_50 .column2, .two_columns_66_33 .column1, .two_columns_66_33 .column2 {
+		margin-bottom: 0;
+	}
+	.two_columns_50_50>.column1>.column_inner, .two_columns_66_33>.column1>.column_inner {
+		padding: 0;
+	}
+	.two_columns_50_50>.column2>.column_inner, .two_columns_66_33>.column2>.column_inner {
+		padding: 0;
+	}
+	#fp-banner .container_inner .fp-banner-fight {
+		font-size: 66px;
+	}
+	#fp-cta {
+		text-align: center;
+		.two_columns_50_50 {
+			display: block;
+			.column1 {
+				display: block;
+				height: 550px;
+				background-position: center top;
+				margin-bottom: 0;
+			}
+			.column2 {
+				h2 {
+					margin-bottom: 40px;
+					font-size: 40px;
+				}
+				ul li:before {
+					position: relative;
+					left: 0;
+					display: block;
+					margin: 0 auto 10px;
+					font-size: 60px;
+					width: 60px;
+					height: 60px;
+				}
+			}
+		}
+	}
+	#fp-practice-areas .PA-tile {
+		width: 49.5%;
+	}
+	#fp-areas {
+		background-size: 125%;
+		background-position: right bottom;
+		padding-bottom: 140px;
+		.areas-bottom {
+			padding: 50px 0 190px;
+		}
+	}
+	#fp-about {
+		background-position: right center;
+	}
+	#fp-do-for-you-items .fp-do-for-you-item .column1{
+		width: 100%;
+		text-align: center;
+	}
+
+	#fp-do-for-you-items .fp-do-for-you-item .column2 {
+		width: 100%;
+		text-align: center;
+	}
+	.contact-container .two_columns_50_50 .column2 .column_inner {
+		padding: 0 10%;
+	}
+	footer .foot-bottom-menu ul.menu {
+	display: block;
+	text-align: center;
+		li {
+		display: inline-block;
+		padding: 0 10px 5px;
+		}
+	}
+	.two_columns_66_33>.column2.sidebar .column_inner .accordion_holder.accordion {
+		margin-bottom: 0;
+	}
+	.page-id-19 .two_columns_66_33>.column2.sidebar .column_inner .accordion_holder.accordion {
+		margin-bottom: 50px;
+	}
+	#child-2-can-do .what-item {
+		width: 49%;
+	}
+	.keith-photo {
+		margin-top: 20px;
+	}
+	.page-id-10,
+	.page-id-1042 {
+		.page-bg {
+			.two_columns_50_50 {
+				.column1 {
+					width: 100%;
+				}
+				.column2 {
+					width: 100%;
+				}
+			}
+		}
+	}
+	.page-id-10,
+	.page-id-1042 {
+		.banner-container .banner {
+			background-position: 70% center!important;
+		}
+	}
+	.page-id-12 {
+		.banner .container_inner .contact-icons {
+			width: 45%;
+		}
+		#contact-content {
+
+			.office-locations {
+				column-gap: unset;
+				-webkit-column-count: unset;
+				column-count: unset;
+				padding: 20px 0;
+				margin: 0;
+				li {
+					width: 49%;
+					text-align: center;
+					padding-bottom: 20px;
+					vertical-align: top;
+					&:before {
+						position: relative;
+						left: unset;
+						margin-right: 10px;
+					}
+				}
+			}
+		}
+	}
+	/* why hire page */
+	.page-id-453 .banner-container .banner {
+		background-position: 30% center!important;
+	}
+	.banner-container .category-banner-left { 
+		width: 100%;
+	}
+	.banner-container .category-banner-right {
+		display: none;
+	}
+	.page-template-page-category .banner-container .banner, .page-template-page-category-child .banner-container .banner {
+		background-size: 0, cover !important;
+	}
+	.page-template-page-category .banner-container .banner .container_inner, .page-template-page-category-child .banner-container .banner .container_inner {
+		width: 100%;
+	}
+	.banner-container .category-banner-left #breadcrumbs a {
+		color: $white;
+	}
+	.post-type-archive-testimonials {
+		.banner-container .banner {
+			background-position: left center!important;
+			.two_columns_50_50 .column2 {
+				display: none;
+			}
+		}
+	}
+	.post-type-archive-results {
+		.banner-container .banner {
+			background-position: center center!important;
+		}
+	}
+	.blog .blog_holder article {
+		width: 49%;
+		padding-bottom: 10px;
+	}
+	.single .blog-image .social_share_holder {
+		right: 0;
+	}
+	.single .blog-feed img {
+		max-width: 100%;
+	}
+	.blog .blog_holder article .post_text_holder span.category a {
+		font-size: 14px;
+	}
+	footer .foot-left p.big-text {
+		font-size: 24px;
+		margin-top: 22px;
+	}
+	footer .foot-right .office-locations {
+		width: 100%;
+	}
+	.page-template-page-category #category-bottom ul li, .page-template-page-category #category-child-1-bottom ul li, .page-template-page-category-child #category-bottom ul li, .page-template-page-category-child #category-child-1-bottom ul li {
+		font-size: 16px;
+	}
+	#remedies-item .column1 {
+		display: none;
+	}
+	#remedies-item .column2 {
+		width: 100%;
+		padding: 0 10%;
+	}
+	#fp-remedies {
+		padding: 60px 0 30px;
+	}
+}
+
+@media (max-width: 667px) {
+	.header-tab .reasons-box p {
+		font-size: 16px;
+	}
+	#breadcrumbs {
+		line-height: 100%;
+		display: none;
+	}
+	.big-container {
+		text-align: center;
+		.head-bottom-container {
+			.container_inner {
+				width: 100%;
+			}
+		}
+	}
+	header {
+		height: 150px;
+		.head-top ul {
+			display: none;
+		}
+		.logo {
+			width: 290px;
+			padding: 0!important;
+			a img {
+				height: 55px !important;
+			}
+		}
+	}
+	#menu-icon {
+		margin-top: 35px;
+		margin-bottom: 0;
+	}
+	.banner-container, .page-template-page-category-child-2 .banner-container {
+		min-height: 400px;
+	}
+	.banner-container .category-banner-left .category-banner-left-container {
+		padding: 50px 10px;
+	}
+	.banner-container .banner .arrow.bounce {
+		left: 10px;
+	}
+	.two_column_list, ul.four_column_list {
+		-webkit-column-gap: 1;
+		column-count: 1;
+		padding-bottom: 0;
+	}
+	#fp-areas .container_inner .areas-top .four_column_list li {
+		text-align: center;
+	}
+	h1 {
+		font-size: 32px;
+	}
+	h2 {
+		font-size: 28px;
+	}
+	.content ul {
+		margin-left: 0px;
+	}
+	.big-text {
+		font-size: 20px;
+	}
+	#fp-banner .container_inner {
+		h1 {
+			padding-bottom: 20px;
+		}
+		#banner-selector ul li.help-item {
+			border-left: 0;
+			padding: 10px 20px;
+		}
+		p {
+			font-size: 24px;
+		}
+		.fp-banner-fight {
+			font-size: 50px;
+		}
+		h5 {
+			font-size: 18px;
+		}
+		.accordion_holder.accordion div.accordion_content {
+			font-size: 14px;
+		}
+		#banner-selector ul {
+			padding-bottom: 0;
+			li.help-item:before {
+				display: none;
+			}
+		}
+	}
+	#fp-banner .container_inner #banner-selector {
+		width: 100%;
+	}
+	#fp-banner .container_inner #banner-selector ul li.help-item a {
+		padding: 0;
+	}
+	#fp-practice-areas .PA-tile {
+		width: 100%;
+	}
+	#practice-areas-tiles .container_inner .PA-content a {
+		font-weight: 600; 
+	}
+	#fp-do-for-you-items, #fp-areas .areas-bottom {
+		background-size: 100%;
+	}
+	#fp-about {
+		background-position: center center;
+	}
+	#fp-areas {
+		background-size: 170%;
+    	background-position: 77% bottom;
+    	padding-bottom: 50px;
+		.areas-bottom {
+			.btn {
+				width: 100%;
+			}
+		}
+	}
+	.page-id-8 .keith-caption p {
+		padding: 40px 20px;
+	}
+	.page-id-453 .page-bg .container_inner {
+		width: 90%;
+	}
+	footer {
+		.foot-container {
+			display: block;
+		}
+		.foot-left {
+			padding-right: 0;
+		}
+		.foot-right {
+			margin-top: 40px;
+		}
+	}
+	.contact-container {
+		height: unset;
+		.two_columns_50_50 {
+			display: block;
+			.column1 {
+				height: 200px;
+			}
+			.column2 {
+				.column_inner {
+					padding: 20px 10%;
+				}
+			}
+		}
+	}
+	#category-contact {
+		background-position: 40% center;
+		.big-text {
+			width: 90%;
+		}
+		.left, .right {
+			width: 100%;
+		}
+		.right {
+			margin-top: 25px;
+		}
+		i { 
+			padding-right: 5px;
+		}
+	}
+	.page-template-page-category-child #category-split-1 .two_columns_50_50 {
+		/*padding: 50px 0 0;*/
+		padding: 0;
+	}
+	#child-2-can-do .what-item {
+		width: 100%;
+	}
+	.post-type-archive-testimonials .banner-container .banner {
+		background-position: calc(20% - -10px) center!important;
+	}
+	.blog .blog_holder article {
+		width: 100%;
+	}
+	.single {
+		.page-bg { 
+			padding-top: 100px;
+		}
+		.blog-image {
+			.social_share_holder {
+				width: 100%;
+				top: unset;
+				bottom: -80px;
+				p {
+					padding: 5px 0;
+				}
+				ul {
+					padding-bottom: 0;
+					li {
+						float: left;
+					}
+				}
+			}
+		}
+		.comment_holder {
+			margin-bottom: 10px;
+		}
+		p#reply-title {
+			display: none;
+		}
+	}
+	.page-id-12 {
+		.banner .container_inner .contact-icons {
+			width: 100%;
+		}
+		#contact-content {
+			padding: 50px 0 50px;
+			
+			.office-locations li {
+				width: 100%;
+			}
+		}
+	}
+	.page-id-10 { // Keith Custis
+		.banner-container {
+			background: $white;
+			min-height: 500px;
+			.banner[style] {
+				background: $white url('/wp-content/uploads/2018/08/attorney-bio-keith-custis-header-img-mobile.jpg') no-repeat!important;
+				background-size: contain!important;
+				.container_inner {
+					display: block;
+					justify-content: unset;
+					flex-direction: unset;
+					.banner-content {
+						margin-top: 295px;
+					}
+					.arrow.bounce {
+						bottom: 0;
+					}
+				}
+			}
+		}
+		aside .widget {
+			padding-bottom: 0;
+		}
+	}
+	.page-id-1042 { // Simona Danesh
+		.banner-container {
+			background: $white;
+			min-height: 500px;
+			.banner[style] {
+				background: $white url('/wp-content/uploads/2020/09/attorney-bio-header-simona-mobile.jpg.jpg') no-repeat!important;
+				background-size: contain!important;
+				.container_inner {
+					display: block;
+					justify-content: unset;
+					flex-direction: unset;
+					.banner-content {
+						margin-top: 295px;
+					}
+					.arrow.bounce {
+						bottom: 0;
+					}
+				}
+			}
+		}
+		aside .widget {
+			padding-bottom: 0;
+		}
+	}
+		.page-id-453 {
+		.banner-container {
+			background: $white;
+			min-height: 500px;
+			.banner[style] {
+				background: $white url('/wp-content/uploads/2018/08/why-hire-keith-custis-header-img.jpg') no-repeat!important;
+				background-size: contain!important;
+				.container_inner {
+					display: block;
+					justify-content: unset;
+					flex-direction: unset;
+					.banner-content {
+						margin-top: 295px;
+						h1, p, a {
+							color: $black;
+						}
+					}
+					.arrow.bounce {
+						bottom: 0;
+					}
+				}
+			}
+		}
+	}
+	.page-id-8 #about-what-do .big-text {
+		padding: 0 0 50px;
+	}
+	.page-id-12 {
+		.banner-container {
+			background: $white;
+			min-height: 500px;
+			.banner[style] {
+				background: $white url('/wp-content/uploads/2018/08/contact-header-img-mobile.jpg') no-repeat!important;
+				background-size: contain!important;
+				.container_inner {
+					display: block;
+					justify-content: unset;
+					flex-direction: unset;
+					padding: 100px 0 50px;
+					.banner-content {
+						margin-top: 215px;
+						width: 100%;
+						.contact-icons {
+							color: $black;
+						}
+						h1, p, a, i {
+							color: $black;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 480px) {
+
+}

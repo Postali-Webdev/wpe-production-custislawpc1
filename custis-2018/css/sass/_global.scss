@@ -1,0 +1,45 @@
+/**
+ * Sass variables and functions.
+ *
+ * @package custis-2018
+ * @author Postali
+ */
+
+@import 'functions';
+
+/* Global */
+$rem-base: 16px !default;
+
+$container-max-width: 1140px;
+$container-padding: 30px;
+
+/* Timing*/
+$transition-speed: .4s linear;
+$link-transition-speed: .15s;
+
+ /* Typography */
+/*$body-font-family:  'Noto Sans', sans-serif;*/
+$body-font-family: 'Nanum Myeongjo', serif;
+$body-line-height: 1.8em;
+
+
+/* Colors */
+$black: #36393d;
+$white: #FFFFFF;
+$lt-gray: #f5f5f6;
+$gray:#36393d;
+$blue: #1e91d6;
+$navy-blue: #316091;
+$dark-blue: #336699;
+$green: #97edc4;
+$alt-green: #7ec5a3;
+$brown: #c68156;
+
+/* Fonts */
+/*
+$nato: 'Noto Sans', sans-serif;
+$nato: 'Barlow', sans-serif;
+*/
+$icomoon: 'Icomoon';
+
+$nato: "Noto Serif Display", serif;
