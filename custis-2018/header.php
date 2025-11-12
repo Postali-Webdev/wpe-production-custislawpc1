@@ -101,7 +101,8 @@ if ($disable_qode_seo != "yes") {
 					</div>
 					<div class="head-menu">
 						<div class="head-search"><?php get_search_form(); ?></div>
-						<?php
+						<nav>
+                        <?php
 					        // The parent theme menu has way too many complications, lets use a simple wp_menu, primary-nav, set in the functions.php file
 					        $args = array(
 					          'container' => false,
@@ -109,6 +110,7 @@ if ($disable_qode_seo != "yes") {
 					        );
 					        wp_nav_menu( $args );
 					    ?>
+                        </nav>
 					</div>
 					<div id="head-mobile" class="mobile">
 						<a href="#" id="menu-icon"><hr><hr><hr></a>
@@ -118,14 +120,16 @@ if ($disable_qode_seo != "yes") {
 		</div>
 	</header>
 			<div id="mobile-nav" class="mobile">
-			<?php
-		        // The parent theme menu has way too many complications, lets use a simple wp_menu, mobile-nav, set in the functions.php file
-		        $args = array(
-		          'container' => false,
-		          'theme_location' => 'mobile-nav'
-		        );
-		        wp_nav_menu( $args );
-		    ?>
+                <nav>
+                <?php
+                    // The parent theme menu has way too many complications, lets use a simple wp_menu, mobile-nav, set in the functions.php file
+                    $args = array(
+                    'container' => false,
+                    'theme_location' => 'mobile-nav'
+                    );
+                    wp_nav_menu( $args );
+                ?>
+                </nav>
 		</div>
 		<div class="content">
 				<div class="content_inner">
